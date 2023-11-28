@@ -1,5 +1,7 @@
+import PropTypes from 'prop-types';
 
-export const GifGridItem = ({ title, url }) => {
+
+export const GifGridItem = ({ title, url, id }) => {
   
    return (
     <div className="card">
@@ -9,3 +11,8 @@ export const GifGridItem = ({ title, url }) => {
   );
 
 };
+
+GifGridItem.propTypes = {
+  title: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired
+}
